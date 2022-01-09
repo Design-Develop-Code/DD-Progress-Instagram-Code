@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgb(237, 245, 253);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  animation: slideDown 0.3s linear;
+}
+
+.text {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.fill-up::before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(130, 173, 216);
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 1rem 3rem;
+  background: #419b5e;
+  border-radius: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Montserrat';
+  animation: slideUp 0.3s linear;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50px, -30px);
+  }
+
+  to {
+    transform: translate(Opx);
+  }
+}
